@@ -30,7 +30,7 @@ jobs:
           path: docs
           retention-days: 1
       - name: copy doscs/README.md to root
-        task: ocpyFiles@2 
+        task: CopyFiles@2 
         inputs:
           SourceFolder: docs
           TargetFolder: 
