@@ -2,14 +2,14 @@
   "id": "https://raw.githubusercontent.com/iqb-vocabs/p12/master/unit.json",
   "label": [{
     "lang": "de",
-    "value": "IQB Deutsch Primar - Aufgabe"
+    "value": "IQB Deutsch Primar - Aufgabe A"
   }],
   "groups": [
     {
       "label": [
         {
           "lang": "de",
-          "value": "Aufgabe nuevo"
+          "value": "Aufgabe"
         }
       ],
       "entries": [
