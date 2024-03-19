@@ -2,7 +2,7 @@
   "id": "https://raw.githubusercontent.com/iqb-vocabs/p12/master/unit.json",
   "label": [{
     "lang": "de",
-    "value": "IQB Deutsch Primar - Aufgabe"
+    "value": "IQB Deutsch Primar - Aufgabe BC"
   }],
   "groups": [
     {
@@ -18,7 +18,7 @@
           "label": [
             {
               "lang": "de",
-              "value": "Entwickler******in"
+              "value": "EntwicklerinA"
             }
           ],
           "type": "text",
