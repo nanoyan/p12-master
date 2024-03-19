@@ -29,6 +29,11 @@ jobs:
           name: docs
           path: docs
           retention-days: 1
+          overwrite: true
+      - uses: actions/checkout@v2
+      - name: Rename file 
+        run: mv docs/README.md index.qmd    
+
       - name : Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
       - name: Deploy to GitHub Pages
