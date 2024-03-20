@@ -36,7 +36,8 @@ jobs:
       - name: Create new branch
         uses: actions/checkout@v4
         with:
-          target: gh-prepare
-          sparse-checkout: '.github/workflows'
+          ref: gh-prepare
+          sparse-checkout: '!/.github'
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
