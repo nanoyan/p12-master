@@ -38,7 +38,7 @@ jobs:
               rm .github/workflows/prepare.yml
               git add .
               git commit -m 'Delete prepare.yml'
-              git push --set-upstream origin gh-prepare
+              git push --set-upstream origin gh-prepare --force
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
