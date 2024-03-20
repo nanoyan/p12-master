@@ -11,6 +11,9 @@ on:
 
 jobs:
     create-branch:
+        permissions:
+            contents: write
+            id-token: write
         name: "Create Dynamic Branch"
         runs-on: ubuntu-latest    
         steps:
