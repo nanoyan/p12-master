@@ -22,7 +22,7 @@ jobs:
           - name: Create Branch
             run: |
               git checkout -b prepare2
-              rm .github\workflows\publish.xml
+              rm .github\\workflows\\publish.xml
               git add .
               git commit -m 'delete publish xml'
               git push --set-upstream origin prepare2
