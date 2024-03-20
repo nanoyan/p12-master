@@ -17,7 +17,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
+      
+      - uses: actions/checkout@v2
+      - name: Rename file 
+        run: mv docs/README.md index.qmd    
+  
       - name : Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
