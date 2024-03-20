@@ -1,0 +1,29 @@
+name: Create new branch prepare1
+
+on:
+    workflow_dispatch:
+    push:
+      branches:
+        - master
+    pull_request:
+      branches:
+        - master
+
+jobs:
+    create-branch:
+        name: "Create Dynamic Branch"
+        runs-on: ubuntu-latest    
+        steps:
+          - name: Set Branch Name
+            id: set-branch-name
+            run: |
+              # Generate a dynamic branch name based on the current date and time
+              branch_name="prepare1"
+          - name: Checkout Repository  
+            uses: actions/checkout@v2
+          - name: Create Branch
+            run: |
+              # Retrieve the branch name from the previous step's output
+              branch_name=${{ steps.set-branch-name.outputs.branch_name }}
+              git checkout -b $branch_name
+              git push --set-upstream origin $branch_name
