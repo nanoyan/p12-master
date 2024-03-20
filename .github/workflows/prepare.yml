@@ -30,15 +30,16 @@ jobs:
           path: docs
           retention-days: 1
           overwrite: true
-      - uses: actions/checkout@v2
-      - name: Rename file 
-        run: mv docs/README.md index.qmd    
+ 
       - name: Create new branch
-        uses: actions/checkout@v4
-        with:
-          repository: nanoyan/p12-master
-          ref: gh-prepare
-      - uses: EndBug/add-and-commit@v9
+        run: |
+              git config --global user.email "yanpingchenlin@gmail.com"
+              git config --global user.name "nanoyan"
+              git checkout -b gh-prepare
+              rm .github/workflows/prepare.yml
+              git add .
+              git commit -m 'Delete prepare.yml'
+              git push --set-upstream origin gh-prepare
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
