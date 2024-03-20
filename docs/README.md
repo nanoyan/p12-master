@@ -6,7 +6,7 @@ Autor/Organisation: IQB - Institut zur Qualitätsentwicklung im Bildungswesen
 
 2 Profile definiert:
 
-## Profil "IQB Deutsch Primar - Aufgabe BC"
+## Profil "IQB Deutsch Primar BBBB"
 
 ID of profile: `https://raw.githubusercontent.com/iqb-vocabs/p12/master/unit.json`
 
