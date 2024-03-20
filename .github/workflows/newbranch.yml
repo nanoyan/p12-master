@@ -20,3 +20,7 @@ jobs:
             run: |
               git checkout -b prepare1
               git push --set-upstream origin prepare1
+
+            env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
